@@ -22,9 +22,9 @@ Antes los sitios web eran estáticos, JavaScript nació para cambiar esto.
 
 > [!important] Notas importantes:
 >
-> -   Javascript es sensible a mayusculas y minisculas.
-> -   Respetar la sintaxis de tipo camel case. getElementById
-> -   Punto y coma al final de cada sentencia.
+> - Javascript es sensible a mayusculas y minisculas.
+> - Respetar la sintaxis de tipo camel case. getElementById
+> - Punto y coma al final de cada sentencia.
 
 `var`: Variable como su nombre lo dice, puede variar su valor.
 `const`: Las constantes en cambio no pueden cambiar, son constantes.
@@ -53,3 +53,5 @@ nombre =
 
 En este ejemplo, vemos que no hace falta definir el tipo de dato, además que nuestra variable puede cambiar de tipo.
 ```
+
+---
