@@ -1,19 +1,29 @@
-/* --- Tipos de datos primitivos --- */
+//  --------- Tipos de datos primitivos ---------
 
-/* String */
-let saludo = 'Hello, world!';
+// ------ String ------
 
-/* Numero */
-let numero = 123;
+let saludo = 'Hello, world!'
 
-/* Booleano */
+// ------ Numero ------
+
+let numero = 123
+
+// ------ Booleano ------
+
 let booleanTrue = true
 let booleanFalse = false
 
-/* nulo */
+// ------ nulo ------
+
 let nullValue = null
 
-/* no definido */
+// ------ no definido ------
 
-let undef = undefined;
+let undef = undefined
 
+// --------- Buenas practicas ---------
+/* 
+- ✔️ Usar camelCase
+
+
+*/
