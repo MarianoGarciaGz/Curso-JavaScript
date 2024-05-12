@@ -6,17 +6,21 @@ JavaScript es un lenguaje de secuencias de comandos que te permite crear conteni
 
 Antes los sitios web eran estáticos, JavaScript nació para cambiar esto.
 
+## Temas
+
+3. (Eventos)[Eventos.md]
+
 ---
 
 # Tipos de datos
 
-**String** - 'Hello, world!'
-**Number** - 123
-**Boolean** - true/false
-**object** - Objeto
-**function** - Funciones
-**null** - Null value
-**undefined** - Undefined value
+- **String** - 'Hello, world!'
+- **Number** - 123
+- **Boolean** - true/false
+- **object** - Objeto
+- **function** - Funciones
+- **null** - Null value
+- **undefined** - Undefined value
 
 # Tipos de variables
 
@@ -26,9 +30,9 @@ Antes los sitios web eran estáticos, JavaScript nació para cambiar esto.
 > - Respetar la sintaxis de tipo camel case. getElementById
 > - Punto y coma al final de cada sentencia.
 
-`var`: Variable como su nombre lo dice, puede variar su valor.
-`const`: Las constantes en cambio no pueden cambiar, son constantes.
-`let`: Son variables que son exclusivas para funciones, fuera de las funciones no funcionan.
+- `var`: Variable como su nombre lo dice, puede variar su valor.
+- `const`: Las constantes en cambio no pueden cambiar, son constantes.
+- `let`: Son variables que son exclusivas para funciones, fuera de las funciones no funcionan.
 
 # Tipado
 
