@@ -1,0 +1,44 @@
+<!-- local storage -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="title"></p>
+  </body>
+
+  <script>
+    var usuario = {
+      nombre: 'Mariano',
+      edad: 22,
+      sexo: 'Masculino',
+    }
+
+    localStorage.setItem('usuario', JSON.stringify(usuario))
+
+    var userjson = JSON.parse(localStorage.getItem('usuario'))
+
+    // localStorage.setItem(usuario)
+    console.log(userjson)
+
+    if (typeof Storage != 'undefined') {
+      console.log(typeof Storage)
+    }
+
+    localStorage.setItem('title', 'Curso de programación')
+
+    console.log(localStorage.getItem('Title'))
+    document.querySelector('p').innerHTML = localStorage.getItem('title')
+    document.querySelector('p').append(localStorage.getItem('usuario'))
+
+    // Borrar algo guardado
+    // localStorage.removeItem('usuario')
+    // localStorage.clear()
+  </script>
+</html>

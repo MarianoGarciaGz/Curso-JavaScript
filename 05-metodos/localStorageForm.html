@@ -1,0 +1,60 @@
+<html>
+  <body>
+    <h1>Formulario con LocalStorage</h1>
+    <form id="formulario">
+      <label for="nombre">Nombre:</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre" />
+      <button type="submit">Agregar</button>
+    </form>
+    <button id="btnDelete">Borrar Todos</button>
+
+    <ul id="listaNombres"></ul>
+
+    <script>
+      const formulario = document.querySelector('#formulario')
+      const inputNombre = document.querySelector('#nombre')
+      const listaNombres = document.querySelector('#listaNombres')
+      const btnDeleteAll = document.querySelector('#btnDelete')
+
+      cargarNombres()
+
+      formulario.addEventListener('submit', function (event) {
+        event.preventDefault()
+        const nombre = inputNombre.value.trim()
+        if (nombre !== '') {
+          agregarNombre(nombre)
+          inputNombre.value = ''
+          cargarNombres()
+        }
+      })
+
+      botonbtnDelete.addEventListener('click', function () {
+        localStorage.removeItem('nombres')
+        listaNombres.innerHTML = ''
+      })
+
+      function agregarNombre(nombre) {
+        let nombres = obtenerNombres()
+        nombres.push(nombre)
+        localStorage.setItem('nombres', JSON.stringify(nombres))
+      }
+
+      function obtenerNombres() {
+        return JSON.parse(localStorage.getItem('nombres')) || []
+      }
+
+      function cargarNombres() {
+        listaNombres.innerHTML = ''
+        const nombres = obtenerNombres()
+        nombres.forEach(function (nombre) {
+          const li = document.createElement('li')
+          li.textContent = nombre
+          listaNombres.appendChild(li)
+        })
+      }
+    </script>
+  </body>
+</html>
